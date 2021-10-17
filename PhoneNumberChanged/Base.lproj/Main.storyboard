@@ -1,24 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Acc-UC-aB4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="4Ag-xa-m08">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="Acc-UC-aB4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vV6-BE-9cB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7rf-C1-FhH" kind="relationship" relationship="rootViewController" id="PWj-xa-THg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Hw-Sz-OsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-870" y="84"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="WHf-PS-Lum">
+            <objects>
+                <viewController id="7rf-C1-FhH" customClass="LoginVC" customModule="PhoneNumberChanged" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fIi-NG-LSM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7OJ-0K-B22">
+                                <rect key="frame" x="81" y="268.5" width="253" height="358"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f09-WW-hdH">
+                                <rect key="frame" x="113" y="742" width="189" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="1Ds-cg-brl"/>
+                                    <constraint firstAttribute="height" constant="59" id="Ma1-hk-c8p"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GoogleLogin"/>
+                                <connections>
+                                    <action selector="OnClickedBtnLogin:" destination="7rf-C1-FhH" eventType="touchUpInside" id="3A3-71-G78"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhoneNumber is changed!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEm-j7-45v">
+                                <rect key="frame" x="68" y="127" width="279" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="Rel-CA-7Mv"/>
+                                    <constraint firstAttribute="height" constant="105" id="kja-ly-noW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Ra-80-ON3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7OJ-0K-B22" firstAttribute="top" secondItem="6Ra-80-ON3" secondAttribute="top" constant="180" id="4eE-U7-0L1"/>
+                            <constraint firstItem="6Ra-80-ON3" firstAttribute="trailing" secondItem="eEm-j7-45v" secondAttribute="trailing" constant="67" id="4ua-Fz-A4A"/>
+                            <constraint firstItem="6Ra-80-ON3" firstAttribute="bottom" secondItem="f09-WW-hdH" secondAttribute="bottom" constant="61" id="6QO-Yn-JFx"/>
+                            <constraint firstItem="eEm-j7-45v" firstAttribute="leading" secondItem="6Ra-80-ON3" secondAttribute="leading" constant="68" id="Fos-tQ-W2X"/>
+                            <constraint firstItem="6Ra-80-ON3" firstAttribute="trailing" secondItem="f09-WW-hdH" secondAttribute="trailing" constant="112" id="JUs-RM-Dpe"/>
+                            <constraint firstItem="7OJ-0K-B22" firstAttribute="leading" secondItem="6Ra-80-ON3" secondAttribute="leading" constant="81" id="bEG-3G-0PU"/>
+                            <constraint firstItem="f09-WW-hdH" firstAttribute="top" secondItem="7OJ-0K-B22" secondAttribute="bottom" constant="115" id="eYh-is-P6U"/>
+                            <constraint firstItem="f09-WW-hdH" firstAttribute="leading" secondItem="6Ra-80-ON3" secondAttribute="leading" constant="113" id="gqk-U6-JF1"/>
+                            <constraint firstItem="eEm-j7-45v" firstAttribute="top" secondItem="6Ra-80-ON3" secondAttribute="top" constant="39" id="n4k-qu-SSf"/>
+                            <constraint firstItem="6Ra-80-ON3" firstAttribute="trailing" secondItem="7OJ-0K-B22" secondAttribute="trailing" constant="80" id="wn6-4S-ENF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Ce-Qi-FnM"/>
+                    <connections>
+                        <segue destination="cJP-im-PCa" kind="show" identifier="SegueToNotify" id="G68-Sh-sLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kyt-bU-ceW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="84"/>
+        </scene>
+        <!--NotifyVC-->
+        <scene sceneID="P2Q-j7-Blk">
+            <objects>
+                <viewController storyboardIdentifier="Notify" id="cJP-im-PCa" customClass="NotifyVC" customModule="PhoneNumberChanged" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="df6-2q-Hzp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Qsy-xc-GfE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="C3G-tW-3Yb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHY-xl-nwF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="84"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paperplane.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

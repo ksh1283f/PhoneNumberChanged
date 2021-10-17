@@ -14,9 +14,15 @@
 		5716013E271C2479002E53B9 /* PhoneNumberChanged.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5716013C271C2479002E53B9 /* PhoneNumberChanged.xcdatamodeld */; };
 		57160140271C247E002E53B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5716013F271C247E002E53B9 /* Assets.xcassets */; };
 		57160143271C247E002E53B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57160141271C247E002E53B9 /* LaunchScreen.storyboard */; };
+		5716014B271C29E3002E53B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5716014A271C29E3002E53B9 /* GoogleService-Info.plist */; };
+		5716014E271C5503002E53B9 /* NotifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5716014D271C5503002E53B9 /* NotifyVC.swift */; };
+		57160150271C9854002E53B9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5716014F271C9854002E53B9 /* LoginVC.swift */; };
+		AC9E804B79B6849A2D1CEA2F /* Pods_PhoneNumberChanged.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A2C60A5FF5289809FB588 /* Pods_PhoneNumberChanged.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		297A2C60A5FF5289809FB588 /* Pods_PhoneNumberChanged.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneNumberChanged.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3345C7E1B0BB69D0D5E478EE /* Pods-PhoneNumberChanged.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneNumberChanged.debug.xcconfig"; path = "Target Support Files/Pods-PhoneNumberChanged/Pods-PhoneNumberChanged.debug.xcconfig"; sourceTree = "<group>"; };
 		57160130271C2479002E53B9 /* PhoneNumberChanged.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneNumberChanged.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57160133271C2479002E53B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57160135271C2479002E53B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		5716013F271C247E002E53B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57160142271C247E002E53B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57160144271C247E002E53B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5716014A271C29E3002E53B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5716014D271C5503002E53B9 /* NotifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyVC.swift; sourceTree = "<group>"; };
+		5716014F271C9854002E53B9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E36175A2F8D84F57E1073571 /* Pods-PhoneNumberChanged.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneNumberChanged.release.xcconfig"; path = "Target Support Files/Pods-PhoneNumberChanged/Pods-PhoneNumberChanged.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9E804B79B6849A2D1CEA2F /* Pods_PhoneNumberChanged.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39C2A2D94581737BA81A98E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				297A2C60A5FF5289809FB588 /* Pods_PhoneNumberChanged.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		57160127271C2479002E53B9 = {
 			isa = PBXGroup;
 			children = (
+				5716014A271C29E3002E53B9 /* GoogleService-Info.plist */,
 				57160132271C2479002E53B9 /* PhoneNumberChanged */,
 				57160131271C2479002E53B9 /* Products */,
+				D5F181F2340B45E81C98A308 /* Pods */,
+				39C2A2D94581737BA81A98E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +80,7 @@
 		57160132271C2479002E53B9 /* PhoneNumberChanged */ = {
 			isa = PBXGroup;
 			children = (
+				5716014C271C54DF002E53B9 /* ViewControllers */,
 				57160133271C2479002E53B9 /* AppDelegate.swift */,
 				57160135271C2479002E53B9 /* SceneDelegate.swift */,
 				57160137271C2479002E53B9 /* ViewController.swift */,
@@ -70,6 +93,24 @@
 			path = PhoneNumberChanged;
 			sourceTree = "<group>";
 		};
+		5716014C271C54DF002E53B9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5716014D271C5503002E53B9 /* NotifyVC.swift */,
+				5716014F271C9854002E53B9 /* LoginVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D5F181F2340B45E81C98A308 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3345C7E1B0BB69D0D5E478EE /* Pods-PhoneNumberChanged.debug.xcconfig */,
+				E36175A2F8D84F57E1073571 /* Pods-PhoneNumberChanged.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57160147271C247E002E53B9 /* Build configuration list for PBXNativeTarget "PhoneNumberChanged" */;
 			buildPhases = (
+				A8F1BB4E31C2DE02F7C18B13 /* [CP] Check Pods Manifest.lock */,
 				5716012C271C2479002E53B9 /* Sources */,
 				5716012D271C2479002E53B9 /* Frameworks */,
 				5716012E271C2479002E53B9 /* Resources */,
+				45861F40250D8F2E9091DD2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57160143271C247E002E53B9 /* LaunchScreen.storyboard in Resources */,
+				5716014B271C29E3002E53B9 /* GoogleService-Info.plist in Resources */,
 				57160140271C247E002E53B9 /* Assets.xcassets in Resources */,
 				5716013B271C2479002E53B9 /* Main.storyboard in Resources */,
 			);
@@ -136,12 +180,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45861F40250D8F2E9091DD2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoneNumberChanged/Pods-PhoneNumberChanged-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoneNumberChanged/Pods-PhoneNumberChanged-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoneNumberChanged/Pods-PhoneNumberChanged-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8F1BB4E31C2DE02F7C18B13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoneNumberChanged-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5716012C271C2479002E53B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5716014E271C5503002E53B9 /* NotifyVC.swift in Sources */,
 				5716013E271C2479002E53B9 /* PhoneNumberChanged.xcdatamodeld in Sources */,
+				57160150271C9854002E53B9 /* LoginVC.swift in Sources */,
 				57160138271C2479002E53B9 /* ViewController.swift in Sources */,
 				57160134271C2479002E53B9 /* AppDelegate.swift in Sources */,
 				57160136271C2479002E53B9 /* SceneDelegate.swift in Sources */,
@@ -288,6 +376,7 @@
 		};
 		57160148271C247E002E53B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3345C7E1B0BB69D0D5E478EE /* Pods-PhoneNumberChanged.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +405,7 @@
 		};
 		57160149271C247E002E53B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E36175A2F8D84F57E1073571 /* Pods-PhoneNumberChanged.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
