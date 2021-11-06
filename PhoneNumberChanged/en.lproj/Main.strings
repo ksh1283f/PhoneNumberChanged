@@ -1,0 +1,24 @@
+
+/* Class = "UITextView"; text = "Hi, My phone number is changed to 1234-5678! please save it. Thank you!"; ObjectID = "18T-0H-9ki"; */
+"18T-0H-9ki.text" = "Hi, My phone number is changed to 1234-5678! please save it. Thank you!";
+
+/* Class = "UILabel"; text = "PhoneNumber is changed!"; ObjectID = "eEm-j7-45v"; */
+"eEm-j7-45v.text" = "PhoneNumber is changed!";
+
+/* Class = "UIButton"; configuration.title = "GoogleLogin"; ObjectID = "f09-WW-hdH"; */
+"f09-WW-hdH.configuration.title" = "GoogleLogin";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f09-WW-hdH"; */
+"f09-WW-hdH.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Send!"; ObjectID = "ifi-Ax-Ri4"; */
+"ifi-Ax-Ri4.configuration.title" = "Send!";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ifi-Ax-Ri4"; */
+"ifi-Ax-Ri4.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Contacts"; ObjectID = "mNn-8C-OOJ"; */
+"mNn-8C-OOJ.text" = "Contacts";
+
+/* Class = "UILabel"; text = "Message"; ObjectID = "uLH-mT-80D"; */
+"uLH-mT-80D.text" = "Message";
